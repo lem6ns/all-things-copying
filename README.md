@@ -3,4 +3,4 @@
 
 [Click me to use the Valorant Chat Bypass!](https://respecting.github.io/all-things-copying/valorant-chat-bypass)
 
-[Click me to use the Discord Chat Cleaner!](https://respecting.github.io/all-things-copying/discord-chat-cleaner)
+[Click me to use the Discord Chat Flooder!](https://respecting.github.io/all-things-copying/discord-chat-flooder)
