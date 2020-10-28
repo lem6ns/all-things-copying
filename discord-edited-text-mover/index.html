@@ -1,0 +1,53 @@
+<html>
+<head>
+<style type="text/css">
+body {
+    background-color: black;
+    color: #ccc;
+}
+</style>
+</head>
+<body>
+<div style="text-align: center; font-family: Arial;">
+<h1>discord edited mover</h1>
+<p>put text and put where you want to put the edited text by typing |.</p>
+<input id="bruh" placeholder="oh|hey"/>
+<button id="button">output</button>
+<p>output:</p>
+<input id="bru" readonly/>
+<button id="copy">copy</button>
+<div id="sh" style="display: none;">
+<br>
+<p style="color: red;">edit the message, or copy this and edit it in your message.</p>
+<input id="rle" readonly value="&#x202B;">
+<button id="copy1">copy</button>
+</div>
+<br>
+<br>
+<a href="https://github.com/respecting/discord-edited-text-mover">stab me on github</a>
+<br>
+<br>
+<video src="demo.mov" width="50%" controls/>
+</div>
+<script type="text/javascript">
+document.getElementById('copy').onclick = () =>{
+	document.getElementById('bru').select();
+	document.execCommand('copy');
+}
+document.getElementById('copy1').onclick = () =>{
+	document.getElementById('rle').select();
+	document.execCommand('copy');
+}
+document.getElementById('button').onclick = ()=>{
+	regex = /[`!@#$%^&*()_+\-=\[\]{};':"\\,.<>\/?~]/g;
+	if(document.getElementById('bruh').value.match(regex)) document.getElementById('bruh').value = document.getElementById('bruh').value.replace(document.getElementById('bruh').value.match(regex)[0], "").replace("|", "|"+document.getElementById('bruh').value.match(regex)[0])
+	bruh = document.getElementById('bruh').value.split('|');
+	bru = bruh.join('\u202B') + " \u202B"
+	document.getElementById('bru').value = bru
+	document.getElementById('sh').style.display = "";
+}
+let bruh = ["i just|this message", "|who did this", "|wanna see a magic trick", "|", "oh|hey"]
+document.querySelector('#bruh').placeholder = bruh[Math.floor(Math.random()*5)]
+</script>
+</body>
+</html>
