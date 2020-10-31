@@ -5,4 +5,4 @@
 
 [Click me to use the Discord Chat Flooder!](https://respecting.github.io/all-things-copying/discord-chat-flooder)
 
-[Click me to use the Discord Ping Hider!](https://respecting.github.io/all-things-copying/discord-ping-hider)
+[Click me to use the Discord Message Hider!](https://respecting.github.io/all-things-copying/discord-message-hider)
