@@ -27,8 +27,7 @@ body {
 <script type="text/javascript">
 document.getElementById('button').onclick = ()=>{
 	bruh = document.getElementById('bruh').value
-	bru = document.getElementById('shh').value
-  bru = bruh.split("").join('\u200b');
+  document.getElementById('shh').value = bruh.split("").join('\u200b');
   document.getElementById('shh').select();
 	document.execCommand('copy');
 }
